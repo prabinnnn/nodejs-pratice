@@ -9,4 +9,6 @@ myEmitter.on("motor", () => {
 setTimeout(() => {
   console.log("please trun off it");
 }, 3000);
-myEmitter.emit("event");
+console.log("smxmscxdcxd");
+myEmitter.emit("motor");
+console.log("ndjscnsdncedsj");
