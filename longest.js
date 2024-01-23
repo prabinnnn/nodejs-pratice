@@ -1,14 +1,20 @@
-const longestWord = (string) => {
-  const words = string.split(" ");
-  let longest = "";
-
-  for (let i = 0; i < words.length; i++) {
-    if (words[i].length > longest.length) {
-      longest = words[i];
-    }
-  }
-
-  return longest;
+const result = (solution) => {
+  return solution;
 };
 
-console.log(longestWord("Web Development Tutorial"));
+const longeststr = (string, callback) => {
+  const arr = string.split(" ");
+  let long = "";
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length > long.length) {
+      long = arr[i];
+    }
+  }
+  return callback(long);
+};
+
+const newlongstr = () => {
+  console.log(longeststr("web development tutorial", result));
+};
+
+newlongstr();
